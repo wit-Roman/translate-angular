@@ -1,0 +1,12 @@
+<div>
+  <label>Введите имя, чтобы получить токен:</label>
+  <br />
+  <input [(ngModel)]="person" placeholder="name" required />
+  <button type="submit" (click)="send()">Отправить</button>
+  <div>
+    Внесенные изменения будут видны другим пользователям под этим именем
+  </div>
+  @defer (when isAuth) {
+  <h1>Добро пожаловать {{ person }}!</h1>
+  }
+</div>

@@ -1,0 +1,53 @@
+#documenteditor_title_contentEditor {
+  height: 26px;
+  max-width: 75%;
+  width: auto;
+  overflow: hidden;
+  display: inline-block;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 5px;
+}
+
+.document_editor {
+  flex-grow: 1;
+}
+
+.control-section {
+  flex-grow: 1;
+}
+
+.single-line {
+  cursor: text !important;
+  outline: none;
+}
+
+#default_title_bar {
+  height: 36px;
+  line-height: 26px;
+  width: 100%;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/** Document editor sample level font icons*/
+
+[class^="e-de-icon-"],
+[class*=" e-de-icon-"] {
+  font-family: "Sample brower icons" !important;
+}
+
+.e-de-icon-Download:before {
+  content: "\e728";
+}
+
+.e-de-icon-Print:before {
+  content: "\e723";
+}
+
+.title-row {
+  height: 32px;
+}

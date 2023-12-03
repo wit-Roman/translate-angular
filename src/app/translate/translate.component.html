@@ -1,0 +1,35 @@
+<div
+  class="translate-table"
+  [ngClass]="isAuth ? '' : 'translate-table--disabled'"
+>
+  @defer (when !isAuth) {
+  <div class="translate-table__warning">Необходимо авторизоваться</div>
+  }
+  <div class="translate-table__controls">
+    <button class="clear" (click)="clearSelection()">Clear Selection</button>
+    <button class="add" (click)="addRow()">Add Random</button>
+    <button class="remove" (click)="removeRow()">Remove</button>
+    <button class="edit" (click)="editText()">Edit text</button>
+  </div>
+  <!-- AG Grid Angular Component -->
+  <ag-grid-angular
+    class="ag-theme-alpine-dark translate-table__table"
+    [columnDefs]="columnDefs"
+    [columnTypes]="columnTypes"
+    [defaultColDef]="defaultColDef"
+    rowModelType="serverSide"
+    rowSelection="multiple"
+    [cacheBlockSize]="10"
+    [maxBlocksInCache]="2"
+    [rowData]="rowData"
+    [getRowId]="getRowId"
+    [sideBar]="sideBar"
+    [statusBar]="statusBar"
+    [animateRows]="true"
+    (filterChanged)="onFilterChanged($event)"
+    (gridReady)="onGridReady($event)"
+    (cellClicked)="onCellClicked($event)"
+    (cellEditingStarted)="onCellEditingStarted($event)"
+    (cellEditingStopped)="onCellEditingStopped($event)"
+  />
+</div>

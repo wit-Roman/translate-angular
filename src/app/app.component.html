@@ -1,0 +1,73 @@
+<div class="wrapper">
+  <nav>
+    <ul class="menu-list">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          main
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/translate"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          table
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/editor"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          word editor
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/text"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          rich text
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/welcome"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          welcome (test)
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/todolist"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          todo-list (test)
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/age"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          increment (test)
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

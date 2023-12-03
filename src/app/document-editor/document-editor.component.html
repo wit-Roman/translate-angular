@@ -1,0 +1,16 @@
+<div #default_title_bar class="e-de-ctn-title title-row">
+  {{ documentTitle }}
+</div>
+
+<ejs-documenteditorcontainer
+  #documenteditor_default
+  class="document_editor"
+  serviceUrl="
+    https://services.syncfusion.com/angular/production/api/documenteditor/
+  "
+  enableToolbar
+  locale="en-US"
+  (created)="onCreate()"
+  (documentChange)="onDocumentChange()"
+  height="1000px"
+/>

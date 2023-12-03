@@ -1,0 +1,28 @@
+:host(.translate-wrapper) {
+  flex-grow: 1;
+}
+
+.translate-table {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+
+  &--disabled {
+    opacity: 0.8;
+    cursor: no-drop;
+    pointer-events: none;
+  }
+
+  &__warning {
+    color: red;
+    margin: 32px;
+    font-size: 20px;
+  }
+
+  &__table {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+  }
+}
